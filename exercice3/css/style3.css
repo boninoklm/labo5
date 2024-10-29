@@ -1,0 +1,53 @@
+header {
+  grid-area: h;
+  background-color: aquamarine;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+nav {
+  grid-area: n;
+  background-color: aquamarine;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+aside {
+  grid-area: a;
+  background-color: aquamarine;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+main {
+  grid-area: m;
+  background-color: aquamarine;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+footer {
+  grid-area: f;
+  background-color: aquamarine;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+#conteneur {
+  display: grid;
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  column-gap: 2px;
+  row-gap: 2px;
+  background-color: white;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "h h h h"
+    "n n n n"
+    "a m m m"
+    "a m m m"
+    "a m m m"
+    "f f f f";
+}

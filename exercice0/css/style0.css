@@ -1,0 +1,42 @@
+#grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  margin: auto;
+}
+
+#grille2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  margin: auto;
+}
+
+#grille3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  text-align: center;
+  width: 420px;
+  height: 140px;
+  margin: auto;
+  column-gap: 2px;
+  row-gap: 2px;
+}
+
+.carré {
+  border: solid black 1px;
+  padding-top: 6px;
+}
+
+div :nth-child(even) {
+  background-color: aquamarine;
+}
+
+div :nth-child(odd) {
+  background-color: crimson;
+}
